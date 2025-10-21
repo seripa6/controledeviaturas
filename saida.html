@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Viaturas</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Controle de Viaturas do SERIPA VI</h1>
+    <h2>Saída</h2>
+  </header>
+
+  <div class="menu">
+    <a href="saida.html" class="botao">Saída</a>
+    <a href="chegada.html" class="botao">Chegada</a>
+  </div>
+
+  <div class="container">
+
+    <div class="estetica">
+      <div>
+        <p class="esconder">L200:<span id="disponibilidadeL200">Carregando...</span></p>
+      </div>
+      <div>
+        <p class="esconder">Frontier: <span id="disponibilidadeFrontier">Carregando...</span></p>
+      </div>
+      <div>
+        <p class="esconder">Ranger: <span id="disponibilidadeRanger">Carregando...</span></p>
+      </div>
+      <div>
+        <p class="esconder">Doblò: <span id="disponibilidadeDoblo">Carregando...</span></p>
+      </div>
+    </div>
+
+    <div style="display:none;">
+      <span id="kmSaidaL200">0</span>
+      <span id="kmSaidaFrontier">0</span>
+      <span id="kmSaidaRanger">0</span>
+      <span id="kmSaidaDoblo">0</span>
+    </div>
+
+    <!-- Painel lateral (opcional: registros recentes) -->
+    <div class="card panel" id="painelRegistros">
+      <div class="empty">
+
+        <div class="cardviatura infoL200">
+          <p><strong>L200</strong></p>
+          <p><strong>Motorista:</strong> <span id="motoristaL200">Carregando...</span></p>
+          <p><strong>Missão:</strong> <span id="missaoL200">Carregando...</span></p>
+        </div>
+
+        <div class="cardviatura infoFrontier">
+          <p><strong>Frontier</strong></p>
+          <p><strong>Motorista:</strong> <span id="motoristaFrontier">Carregando...</span></p>
+          <p><strong>Missão:</strong> <span id="missaoFrontier">Carregando...</span></p>
+        </div>
+
+        <div class="cardviatura infoRanger">
+          <p><strong>Ranger</strong></p>
+          <p><strong>Motorista:</strong> <span id="motoristaRanger">Carregando...</span></p>
+          <p><strong>Missão:</strong> <span id="missaoRanger">Carregando...</span></p>
+        </div>
+
+        <div class="cardviatura infoDoblo">
+          <p><strong>Doblò</strong></p>
+          <p><strong>Motorista:</strong> <span id="motoristaDoblo">Carregando...</span></p>
+          <p><strong>Missão:</strong> <span id="missaoDoblo">Carregando...</span></p>
+        </div>
+
+      </div>
+    </div>
+    <!-- Card do formulário -->
+    <div class="card form-card">
+
+
+
+      <form id="formViatura">
+
+        <label for="viatura">
+          <p>Viatura:</p>
+        </label>
+        <select name="viatura" id="viatura" class="placeholder-red" required>
+          <option value="" disabled selected>Selecione uma viatura</option>
+          <option value="L200">L200</option>
+          <option value="Frontier">Frontier</option>
+          <option value="Ranger">Ranger</option>
+          <option value="Doblo">Doblò</option>
+        </select>
+
+        <label for="motorista">
+          <p>Motorista:</p>
+        </label>
+        <input type="text" name="motorista" id="motorista" required>
+
+        <label for="requisitante">
+          <p>Requisitante:</p>
+        </label>
+        <input type="text" name="requisitante" id="requisitante" required>
+
+        <label for="kmSaida">
+          <p>KM Saída:</p>
+        </label>
+        <div id="buscarKmSaida">—</div>
+        <input type="hidden" name="kmSaida" id="kmSaidaInput">
+
+        <label for="missao">
+          <p>Missão:</p>
+        </label>
+        <input type="text" name="missao" id="missao" required>
+
+        <label for="dataSaida">
+          <p>Data Saída:</p>
+        </label>
+        <input type="date" name="dataSaida" id="dataSaida" required>
+
+        <label for="horarioSaida">
+          <p>Horário Saída:</p>
+          <input type="time" name="horarioSaida" id="horarioSaida" required>
+        </label>
+
+        <label>
+          <p>Âmbito</p>
+        </label>
+
+
+        <div class="df">
+          <label for="interno">
+            <div class="borda">
+              Interno
+              <input type="radio" id="interno" name="ambito" value="Interno" required>
+            </div>
+          </label>
+          <label for="externo">
+            <div class="borda">
+              Externo
+              <input type="radio" id="externo" name="ambito" value="Externo">
+            </div>
+          </label>
+        </div>
+
+
+        <label for="observacoesSaida">
+          <p>Observações:</p>
+        </label>
+        <input type="text" name="observacoesSaida" id="observacoesSaida">
+
+
+        <div class="centro"><button class="botao" type="submit">Registrar</button></div>
+      </form>
+
+      <p id="mensagem"></p>
+
+      <p class="help">Em caso de erro, relatar a Subseção de Infraestrutura.</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

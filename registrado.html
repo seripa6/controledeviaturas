@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Concluído</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #81f79e, #00c6ff);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff10;
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 50px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.8s ease-out;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .checkmark {
+      font-size: 60px;
+      color: #00ff99;
+      margin-bottom: 10px;
+      animation: pop 0.6s ease-out;
+      user-select: none;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      background: #fff;
+      color: #007bff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: #007bff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      80% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.4rem; }
+      .card { padding: 30px 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="checkmark">✅</div>
+    <h1>Registro realizado com sucesso!</h1>
+    <div class="links">
+      <a href="saida.html">Voltar para Saída de viatura</a>
+      <a href="chegada.html">Voltar para Chegada de viatura</a>
+    </div>
+  </div>
+</body>
+</html>
