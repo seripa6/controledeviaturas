@@ -2,7 +2,7 @@
   "name": "controledeviaturas",
   "short_name": "Controle de Viaturas",
   "description": "controle de viaturas",
-  "start_url": "/",
+  "start_url": "/controledeviaturas/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
