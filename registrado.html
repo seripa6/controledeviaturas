@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #81f79e, #00c6ff);
+      background: linear-gradient(135deg, #5fbfff, #135ecf, #014bbb);
       color: #fff;
       margin: 0;
       padding: 0;
@@ -31,7 +32,7 @@
 
     .checkmark {
       font-size: 60px;
-      color: #00ff99;
+      color: #0099ff;
       margin-bottom: 10px;
       animation: pop 0.6s ease-out;
       user-select: none;
@@ -41,6 +42,7 @@
       font-size: 1.8rem;
       margin-bottom: 20px;
       user-select: none;
+      color: white;
     }
 
     .links {
@@ -52,44 +54,68 @@
     a {
       text-decoration: none;
       background: #fff;
-      color: #007bff;
+      color: #0099ff;
       padding: 12px 18px;
       border-radius: 10px;
       font-weight: 600;
+      font-size: 22px;
       transition: all 0.3s ease;
     }
 
     a:hover {
-      background: #007bff;
+      background: #0099ff;
       color: #fff;
       transform: scale(1.05);
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes pop {
-      0% { transform: scale(0); opacity: 0; }
-      80% { transform: scale(1.1); opacity: 1; }
-      100% { transform: scale(1); }
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      80% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
     }
 
     @media (max-width: 480px) {
-      h1 { font-size: 1.4rem; }
-      .card { padding: 30px 25px; }
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .card {
+        padding: 30px 25px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="card">
     <div class="checkmark">✅</div>
     <h1>Registro realizado com sucesso!</h1>
     <div class="links">
-      <a href="saida.html">Voltar para Saída de viatura</a>
-      <a href="chegada.html">Voltar para Chegada de viatura</a>
+      <a href="index.html">Início</a>
     </div>
   </div>
 </body>
+
 </html>

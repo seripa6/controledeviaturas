@@ -340,6 +340,13 @@ p {
   background: linear-gradient(180deg, rgba(250, 250, 252, 0.6), rgba(255, 255, 255, 0.5));
 }
 
+.img{
+  width: 100%;
+  max-width: 818px;
+  display: flex;
+  margin: auto;
+
+}
 .esconder {
   display: none !important;
 }
@@ -391,6 +398,7 @@ p {
 
 /* BOTÃO ESTILIZADO*/
 .botao {
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,8 +407,8 @@ p {
   color: white;
   border: none;
   font-weight: 600;
+
   border-radius: 12px;
-  width: 150px;
   padding: 12px 28px;
   font-size: 1rem;
   letter-spacing: 0.5px;
@@ -468,5 +476,4 @@ a:focus {
   .estetica>div {
     flex: 0 0 45%;
   }
-
 }
