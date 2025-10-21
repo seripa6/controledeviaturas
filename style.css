@@ -400,6 +400,7 @@ p {
   border: none;
   font-weight: 600;
   border-radius: 12px;
+  width: 150px;
   padding: 12px 28px;
   font-size: 1rem;
   letter-spacing: 0.5px;
@@ -467,4 +468,5 @@ a:focus {
   .estetica>div {
     flex: 0 0 45%;
   }
+
 }
