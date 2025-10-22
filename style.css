@@ -95,7 +95,7 @@ h2::after {
   .container {
     grid-template-columns: 1fr;
     padding: 20px;
-    margin: 28px auto;
+    margin: 0 auto;
   }
 }
 
