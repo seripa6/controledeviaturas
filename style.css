@@ -59,23 +59,34 @@ header h1 {
   text-transform: uppercase;
 }
 
-header h2 {
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 0;
-  text-transform: uppercase;
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #004aad;
+  position: relative;
+}
+
+/* Linha decorativa abaixo do h2 */
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #004aad, #007bff);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 /* Layout central */
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 10px;
   display: grid;
   max-width: 680px;
-  gap: 24px;
+  gap: 14px;
   align-items: start;
 }
 
@@ -138,7 +149,8 @@ textarea,
   transition: box-shadow .12s ease, border-color .12s ease, transform .06s ease;
 }
 
-#kmSaidaChegada , #buscarKmSaida{
+#kmSaidaChegada,
+#buscarKmSaida {
   user-select: none;
   display: inline-block;
   text-align: center;
@@ -152,7 +164,8 @@ textarea,
   text-align: center;
 }
 
-#viatura.placeholder-red , #viaturaChegada {
+#viatura.placeholder-red,
+#viaturaChegada {
   text-align: center;
 }
 
@@ -169,7 +182,8 @@ input[type="date"] {
   transition: box-shadow .12s ease, border-color .12s ease, transform .06s ease;
 }
 
-label {
+label,
+.cen {
   text-align: center;
 }
 
@@ -340,12 +354,13 @@ p {
   background: linear-gradient(180deg, rgba(250, 250, 252, 0.6), rgba(255, 255, 255, 0.5));
 }
 
-.img{
+.img {
   width: 100%;
   max-width: 818px;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
 }
+
 .esconder {
   display: none !important;
 }
@@ -420,7 +435,7 @@ p {
   outline: none;
 }
 
-.centro{
+.centro {
   display: flex;
   justify-content: center;
 }
@@ -451,6 +466,7 @@ a:focus {
   transform: scale(0.98);
   outline: none;
 }
+
 
 /* Focus (acessibilidade) */
 .botao:focus,

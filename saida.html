@@ -8,15 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <link rel="shortcut icon" href="viatura.ico" type="image/x-icon">
-
 </head>
 
 <body>
 
   <header>
     <h1>Controle de Viaturas do SERIPA VI</h1>
-    <h2>Saída</h2>
   </header>
+  <h2>Saída</h2>
 
   <div class="menu">
     <a href="index.html" class="botao">Início</a>
@@ -81,8 +80,6 @@
     <!-- Card do formulário -->
     <div class="card form-card">
 
-
-
       <form id="formViatura">
 
         <label for="viatura">
@@ -106,11 +103,10 @@
         </label>
         <input type="text" name="requisitante" id="requisitante" required>
 
-        <label for="kmSaida">
-          <p>KM Saída:</p>
-        </label>
+        <p class="cen">KM Saída:</p>
         <div id="buscarKmSaida">—</div>
         <input type="hidden" name="kmSaida" id="kmSaidaInput">
+        </label>
 
         <label for="missao">
           <p>Missão:</p>
@@ -127,10 +123,7 @@
           <input type="time" name="horarioSaida" id="horarioSaida" required>
         </label>
 
-        <label>
-          <p>Âmbito</p>
-        </label>
-
+        <p class="cen">Âmbito</p>
 
         <div class="df">
           <label for="interno">
@@ -139,6 +132,7 @@
               <input type="radio" id="interno" name="ambito" value="Interno" required>
             </div>
           </label>
+
           <label for="externo">
             <div class="borda">
               Externo
@@ -147,12 +141,10 @@
           </label>
         </div>
 
-
         <label for="observacoesSaida">
           <p>Observações:</p>
         </label>
         <input type="text" name="observacoesSaida" id="observacoesSaida">
-
 
         <div class="centro"><button class="botao" type="submit">Registrar</button></div>
       </form>
@@ -166,6 +158,5 @@
 
   <script src="script.js"></script>
 </body>
-
 
 </html>
