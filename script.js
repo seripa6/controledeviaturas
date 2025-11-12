@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyG-vTPIWgWIYNEX1IKMsK5ikUxz_4ekibphO8U4_vISgDLn-yjtfAmvTw3oywMr6Me/exec';
+    const scriptURL = 'https://script.google.com/macros/library/d/1527FNtR6esUMs8B5pk1k0rHYeaA6Vq4YaZkhc71EnPRaU0pzjEZujT5c/1';
     const form = document.getElementById('formViatura');
     const msg = document.getElementById('mensagem');
     let enviando = false;
@@ -174,3 +174,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(atualizarTodos, 5000);
 
 });
+
