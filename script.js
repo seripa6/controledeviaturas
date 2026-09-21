@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "L200", status: "disponibilidadeL200", infoClass: "infoL200", motoristaId: "motoristaL200", missaoId: "missaoL200", celulas: ["Q2", "Q3", "Q4", "Q5"] },
         { nome: "Frontier", status: "disponibilidadeFrontier", infoClass: "infoFrontier", motoristaId: "motoristaFrontier", missaoId: "missaoFrontier", celulas: ["R2", "R3", "R4", "R5"] },
         { nome: "Ranger", status: "disponibilidadeRanger", infoClass: "infoRanger", motoristaId: "motoristaRanger", missaoId: "missaoRanger", celulas: ["S2", "S3", "S4", "S5"] },
-        { nome: "Doblo", status: "disponibilidadeDoblo", infoClass: "infoDoblo", motoristaId: "motoristaDoblo", missaoId: "missaoDoblo", celulas: ["T2", "T3", "T4", "T5"] }
+        { nome: "Aircross", status: "disponibilidadeAircross", infoClass: "infoAircross", motoristaId: "motoristaAircross", missaoId: "missaoAircross", celulas: ["T2", "T3", "T4", "T5"] }
     ];
 
     const sheetId = "1yQTzn5uz3F3EWNLraWoZw3aznu1mcoYA_YgQK5KlRCg";
